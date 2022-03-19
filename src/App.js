@@ -1,8 +1,10 @@
 import './App.css';
 import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
-import MobileNavbar from './components/mobile/navbar/MobileNavbar';
 import {HashRouter, Routes, Route } from "react-router-dom";
+import MobileNavbar from './components/mobile/navbar/MobileNavbar';
+import Footer from './components/footer/Footer.js'
+import MobileContent from './components/mobile/content/MobileContent';
 
 
 function App() {
@@ -19,13 +21,17 @@ function App() {
   switch (device) {
     case "Mobile":
       appChildren = 
-      <MobileNavbar></MobileNavbar>
+        <div className='page-content'>
+          <MobileNavbar></MobileNavbar>
+          <MobileContent></MobileContent>
+          <Footer></Footer>
+        </div>
       break;
     case "Desktop":
       appChildren = 
-      <div>
-        Desktop
-      </div>
+      <div className='page-content'>
+          <Footer></Footer>
+        </div>
       break;
   }
 
