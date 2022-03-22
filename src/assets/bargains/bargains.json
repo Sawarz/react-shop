@@ -1,0 +1,14 @@
+{
+    "bargains":[
+        {
+            "id": 1,
+            "name": "Bargain 1",
+            "src": "useState.png"
+        },
+        {
+            "id": 1,
+            "name": "Bargain 2",
+            "src":"useEffect.png"
+        }
+    ]
+}
