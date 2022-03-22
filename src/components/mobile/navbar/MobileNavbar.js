@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
-import Logo from "../../logo/Logo.js"
+import Logo from "../../desktop&mobile/logo/Logo.js"
 import NavElement from '../../desktop/navbar/nav-element/NavElement';
 import HamburgerMenu from './hamburger/Hamburger.js';
 import HamburgerContent from './hamburger/HamburgerContent.js'
@@ -25,7 +25,7 @@ export default function MobileNavbar() {
         <Logo></Logo>
         <HamburgerContent hamburgerContentStyle={hamburgerContentStyle}></HamburgerContent>
         <Link to="/shopping-cart">
-            <img src={shoppingCartIcon} width="40px" height="40px"></img>
+            <img src={shoppingCartIcon} width="32px" height="32px"></img>
         </Link>
     </div>
   )

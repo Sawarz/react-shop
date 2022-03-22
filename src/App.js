@@ -3,7 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useState, useEffect } from 'react';
 import {HashRouter, Routes, Route } from "react-router-dom";
 import MobileNavbar from './components/mobile/navbar/MobileNavbar';
-import Footer from './components/footer/Footer.js'
+import Footer from './components/desktop&mobile/footer/Footer.js'
 import MobileContent from './components/mobile/content/MobileContent';
 
 
@@ -21,10 +21,12 @@ function App() {
   switch (device) {
     case "Mobile":
       appChildren = 
-        <div className='page-content'>
-          <MobileNavbar></MobileNavbar>
-          <MobileContent></MobileContent>
-          <Footer></Footer>
+        <div className='page'>
+          <MobileNavbar></MobileNavbar>     
+          <div className='page-content'>
+            <MobileContent></MobileContent>
+          </div>
+            <Footer></Footer>
         </div>
       break;
     case "Desktop":
@@ -43,8 +45,7 @@ function App() {
   <div className="App">
       {appChildren}
     </div>
-</HashRouter>
-    
+  </HashRouter>
   );
 }
 
