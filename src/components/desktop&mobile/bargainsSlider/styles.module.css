@@ -3,5 +3,9 @@
     height: 200px;
     border: 1px solid gray;
     border-radius: 20px;
-
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
