@@ -1,11 +1,27 @@
-.bargainsSlider{
-    width: 60vw;
-    height: 200px;
+.bargainsWrapper{
+    display: flex;
+    flex-direction: column;
     border: 1px solid gray;
     border-radius: 20px;
+    align-items: center;
+    background: rgb(33,77,122);
+    background: linear-gradient(180deg, rgba(33,77,122,0.87156869583771) 64%,
+    rgba(57,19,106,0.7623249983587185) 100%);
+}
+
+.bargainsSlider{
+    width: 60vw;
+    height: 150px;
     padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.dotsWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
 }

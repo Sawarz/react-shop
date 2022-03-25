@@ -1,0 +1,10 @@
+.sliderDot{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.sliderDotFilled{
+    background-color: black;
+}
