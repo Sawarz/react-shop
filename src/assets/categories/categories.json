@@ -1,0 +1,23 @@
+{
+    "categories":
+    [
+        {
+            "name": "Hooks"
+        },
+        {
+            "name": "Functional Components"
+        },
+        {
+            "name": "Class Components"
+        },
+        {
+            "name": "Props"
+        },
+        {
+            "name": "JSX"
+        },
+        {
+            "name": "Routing"
+        }
+    ]
+}

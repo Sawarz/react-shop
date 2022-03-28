@@ -1,0 +1,12 @@
+.categoriesWrapper{
+    width: 90vw;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
