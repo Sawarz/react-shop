@@ -4,10 +4,10 @@
     border: 1px solid gray;
     border-radius: 20px;
     align-items: center;
-    background: rgb(33,77,122);
-    background: linear-gradient(180deg, rgba(33,77,122,0.87156869583771) 64%,
-    rgba(57,19,106,0.7623249983587185) 100%);
-}
+    background: rgb(190,176,114);
+    background: linear-gradient(180deg, rgba(190,176,114,0.7595238779105392) 32%,
+    rgba(185,162,214,0.5634454465379901) 100%);
+    }
 
 .bargainsSlider{
     width: 60vw;
