@@ -12,34 +12,32 @@ export default function BargainsSlider() {
   function handleClick(direction) {
     if (direction === "left") {
       if (currentSlide === 0)
-        setCurrentSlide(data.bargains.length - 1);
+        setCurrentSlide(bargains.length - 1);
       else {
         setCurrentSlide(currentSlide - 1);
       }
     }
     else {
-      if (currentSlide === data.bargains.length - 1)
+      if (currentSlide === bargains.length - 1)
         setCurrentSlide(0);
       else {
         setCurrentSlide(currentSlide + 1);
       }
     }
-    console.log(currentSlide)
   }
 
-  for (let i = 0; i < data.bargains.length; i++){
-    console.log(bargains[i].src)
+  for (let i = 0; i < bargains.length; i++){
     imgs[i] = require(`../../../assets/bargains/${bargains[i].src}`);
   }
   return (
     <div className={styles.bargainsWrapper}>
       <div className={styles.bargainsSlider}>
         <SliderButton direction="left" onClick={handleClick}></SliderButton>
-        <img src={imgs[currentSlide]} width="200px" ></img>
+        <img src={imgs[currentSlide]} width="130px" ></img>
         <SliderButton direction="right" onClick={handleClick}></SliderButton>
       </div>
       <div className={styles.dotsWrapper}>
-        {data.bargains.map((bargain, i) => {
+        {bargains.map((bargain, i) => {
           return (
             <SliderDot id={i} currentSlide={currentSlide}></SliderDot>
           )
