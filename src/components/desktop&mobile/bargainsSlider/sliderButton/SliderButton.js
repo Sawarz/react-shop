@@ -10,7 +10,7 @@ export default function SliderButton(props) {
             <button className={styles.sliderButton} onClick={(e) => {
                 props.onClick(props.direction)
             }}>
-                <FontAwesomeIcon icon={faAngleLeft} />
+                <FontAwesomeIcon icon={faAngleLeft} size="2x"/>
             </button>
         )
     else {
@@ -18,7 +18,7 @@ export default function SliderButton(props) {
             <button className={styles.sliderButton} onClick={(e) => {
                 props.onClick(props.direction)
             }}>
-                <FontAwesomeIcon icon={faAngleRight} />
+                <FontAwesomeIcon icon={faAngleRight} size="2x"/>
             </button>
         )
     }
