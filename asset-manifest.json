@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-shop/static/css/main.84ee574f.css",
-    "main.js": "/react-shop/static/js/main.6b81b348.js",
+    "main.js": "/react-shop/static/js/main.77f8c194.js",
     "static/js/787.affa5bbf.chunk.js": "/react-shop/static/js/787.affa5bbf.chunk.js",
     "static/media/LogoImg.png": "/react-shop/static/media/LogoImg.00ecb23b7ebc5e7c3a52.png",
     "static/media/useEffect.png": "/react-shop/static/media/useEffect.1c8acdfff6c8f323a760.png",
@@ -9,11 +9,11 @@
     "static/media/shopping-cart.png": "/react-shop/static/media/shopping-cart.96c73cb49987ccdf1154.png",
     "index.html": "/react-shop/index.html",
     "main.84ee574f.css.map": "/react-shop/static/css/main.84ee574f.css.map",
-    "main.6b81b348.js.map": "/react-shop/static/js/main.6b81b348.js.map",
+    "main.77f8c194.js.map": "/react-shop/static/js/main.77f8c194.js.map",
     "787.affa5bbf.chunk.js.map": "/react-shop/static/js/787.affa5bbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84ee574f.css",
-    "static/js/main.6b81b348.js"
+    "static/js/main.77f8c194.js"
   ]
 }
