@@ -9,4 +9,12 @@
     flex-direction: row;
     gap: 10px;
     margin-top: 10px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.categories::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
