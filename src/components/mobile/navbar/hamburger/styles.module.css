@@ -74,8 +74,11 @@
   }
 
   .hamburgerElement{
-    align-items: center;
+    text-decoration: none;
+    color: black;
     height: 30px;
     width: 100%;
+    align-items: center;
+    text-align: center;
     border-bottom: 1px solid gray;  
   }
