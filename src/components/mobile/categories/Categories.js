@@ -7,7 +7,10 @@ export default function Categories() {
     const categories = data.categories;
     return (
     <div className={styles.categoriesWrapper}>
-        Top Categories
+        <div className={styles.categoriesTitle}>
+            <h1>Top Categories</h1>
+            <div className={styles.seeAll}>See All</div>
+        </div>
         <div className={styles.categories}>
             {categories.map((category, i) => {
                 return (
