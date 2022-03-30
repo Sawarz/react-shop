@@ -5,7 +5,10 @@ import {HashRouter, Routes, Route } from "react-router-dom";
 import MobileNavbar from './components/mobile/navbar/MobileNavbar';
 import Footer from './components/desktop&mobile/footer/Footer.js'
 import MobileContent from './components/mobile/content/MobileContent';
-
+import MobileRouteWrapper from './components/mobile/mobile-route-wrapper/MobileRouteWrapper';
+import Contact from './components/mobile/contact/Contact';
+import Products from './components/mobile/products/Products';
+import AboutUs from './components/mobile/about-us/AboutUs';
 
 function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
@@ -21,7 +24,7 @@ function App() {
   switch (device) {
     case "Mobile":
       appChildren = 
-        <div className='page'>
+        <div className='mobile-page'>
           <MobileNavbar></MobileNavbar>     
           <div className='page-content'>
             <MobileContent></MobileContent>
@@ -38,13 +41,15 @@ function App() {
   }
 
   return (
-    <HashRouter>
-  <Routes>
-    <Route path="/products"></Route>
-  </Routes>
-  <div className="App">
-      {appChildren}
-    </div>
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={appChildren}></Route>
+      <Route path="/home" element={appChildren}></Route> 
+      <Route path="/products" element={<MobileRouteWrapper component={<Products/>}/>}></Route>
+      <Route path="/contact" element={<MobileRouteWrapper component={<Contact/>}/>}></Route>
+      <Route path="/about-us" element={<MobileRouteWrapper component={<AboutUs/>}/>}></Route>
+      <Route path="/products"></Route>
+    </Routes>
   </HashRouter>
   );
 }
