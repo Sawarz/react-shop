@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import Logo from "../../desktop&mobile/logo/Logo.js"
@@ -9,21 +9,28 @@ import shoppingCartIcon from '../../../assets/icons/shopping-cart.png'
 
 export default function MobileNavbar() {
     const [hamburgerContentStyle, setHamburgerContentStyle] = useState(styles.hamburgerContent);
-
-    function getAnimationState(animationState){
+    const [animation, setAnimation] = useState(false);
+    
+    function getAnimationState(animationState) {
+        console.log("pobrany state w navbarze " + animationState);
+        setAnimation(animationState);
         if(animationState === true){
-            setHamburgerContentStyle(styles.hamburgerContent + " " + styles.hamburgerContentOut);
+            setHamburgerContentStyle(styles.hamburgerContent + " " + styles.hamburgerContentIn);
         }
         else{
-            setHamburgerContentStyle(styles.hamburgerContent + " " + styles.hamburgerContentIn);
+            setHamburgerContentStyle(styles.hamburgerContent + " " + styles.hamburgerContentOut);
         }
     }
 
+    useEffect(() => {
+        console.log("zmiana w navbarze " + animation);
+    },[animation])
+
   return (
     <div className={styles.navbar}>
-        <HamburgerMenu getAnimationState={getAnimationState}></HamburgerMenu>
+          <HamburgerMenu animation={animation} getAnimationState={getAnimationState}></HamburgerMenu>
         <Logo></Logo>
-        <HamburgerContent hamburgerContentStyle={hamburgerContentStyle}></HamburgerContent>
+          <HamburgerContent animation={animation} hamburgerContentStyle={hamburgerContentStyle} getAnimationState={getAnimationState}></HamburgerContent>
         <Link to="/shopping-cart">
             <img src={shoppingCartIcon} width="32px" height="32px"></img>
         </Link>
