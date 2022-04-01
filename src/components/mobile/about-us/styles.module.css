@@ -1,3 +1,52 @@
-aboutUs{
+.aboutUs{
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.h1Style{
+    text-align: center;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.imgWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+.imgWrapper > img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    margin-bottom: 10px;
+}
+
+.blueDot{
+    color: blue;
+    font-size: xx-large;
+}
+
+.headerText{
+    font-size: 1.3rem;
+}
+
+.underH2Line{
+    background-color: blue;
+    border-radius: 5px;
+    width: 30px;
+    height: 5px;
 }
