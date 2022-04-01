@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
           <div>{text}
-              <Emoji symbol="🐝" label="sheep"></Emoji>
+              <Emoji symbol="🐝" label="bee"></Emoji>
         </div>
     </footer>
   )
