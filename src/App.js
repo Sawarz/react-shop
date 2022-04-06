@@ -1,14 +1,20 @@
 import './App.css';
 import { useMediaQuery } from 'react-responsive';
-import { useState, useEffect } from 'react';
-import {HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './components/redux/Store';
+import Footer from './components/desktop&mobile/footer/Footer.js';
+import Navbar from './components/desktop/navbar/navbar/Navbar';
+import DesktopRouteWrapper from './components/desktop/desktop-route-wrapper/DesktopRouteWrapper';
+import Products from './components/desktop/products/Products';
+import Contact from './components/desktop/contact/Contact';
+import AboutUs from './components/desktop/about-us/AboutUs';
 import MobileNavbar from './components/mobile/navbar/MobileNavbar';
-import Footer from './components/desktop&mobile/footer/Footer.js'
 import MobileContent from './components/mobile/content/MobileContent';
 import MobileRouteWrapper from './components/mobile/mobile-route-wrapper/MobileRouteWrapper';
-import Contact from './components/mobile/contact/Contact';
-import Products from './components/mobile/products/Products';
-import AboutUs from './components/mobile/about-us/AboutUs';
+import MobileContact from './components/mobile/contact/Contact';
+import MobileProducts from './components/mobile/products/Products';
+import MobileAboutUs from './components/mobile/about-us/AboutUs';
 
 function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
@@ -34,23 +40,28 @@ function App() {
       break;
     case "Desktop":
       appChildren = 
-      <div className='page-content'>
-          <Footer></Footer>
+        <div className='desktop-page'>
+          <Navbar></Navbar>
+          <div className='page-content'>
+            <Footer></Footer>
+          </div>
         </div>
       break;
   }
 
   return (
-  <HashRouter>
-    <Routes>
-      <Route path="/" element={appChildren}></Route>
-      <Route path="/home" element={appChildren}></Route> 
-      <Route path="/products" element={<MobileRouteWrapper component={<Products/>}/>}></Route>
-      <Route path="/contact" element={<MobileRouteWrapper component={<Contact/>}/>}></Route>
-      <Route path="/about-us" element={<MobileRouteWrapper component={<AboutUs/>}/>}></Route>
-      <Route path="/products"></Route>
-    </Routes>
-  </HashRouter>
+  <Provider store={store}>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={appChildren}></Route>
+        <Route path="/home" element={appChildren}></Route> 
+        <Route path="/products" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileProducts />} /> : <DesktopRouteWrapper component={<Products />}/>}></Route>
+        <Route path="/contact" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileContact />} /> : <DesktopRouteWrapper component={<Contact />}/>}></Route>
+        <Route path="/about-us" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileAboutUs />} /> : <DesktopRouteWrapper component={<AboutUs />}/>}></Route>
+        <Route path="/products"></Route>
+      </Routes>
+    </HashRouter>
+  </Provider>
   );
 }
 
