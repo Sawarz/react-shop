@@ -7,8 +7,16 @@
   height: 100vw;
 }
 
-.page-content{
+.mobile-page-content{
   padding-top: 80px;
   margin: 10px;
   margin-top: 0px;
+}
+
+.desktop-page-content{
+  padding-top: 80px;
+  margin: 10px;
+  margin-top: 0px;
+  width: 60vw;
+  margin-left: 20vw;
 }
