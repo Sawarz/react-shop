@@ -1,0 +1,33 @@
+.contact{
+    margin-top: 10px;
+    height: 80vh;
+    display: flex;
+    border: 5px solid pink;
+    background-color: pink;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.contactHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactInfoElement{
+    height: 150px;
+    width: 250px;
+    border: 2px solid black;
+}
