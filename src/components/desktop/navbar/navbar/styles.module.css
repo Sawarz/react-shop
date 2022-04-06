@@ -1,0 +1,29 @@
+.navbar{
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    padding-left: 35vw;
+    padding-right: 35vw;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.navbarLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.currentLocation{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.10686281348476889) 32%, rgba(0,0,0,0.05644264541754207) 100%);
+    border-bottom: 5px solid red;
+}
