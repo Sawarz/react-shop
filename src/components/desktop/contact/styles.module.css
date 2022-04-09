@@ -2,13 +2,12 @@
     margin-top: 10px;
     height: 80vh;
     display: flex;
-    border: 5px solid pink;
-    background-color: pink;
-    border-radius: 50px;
+    background-color: rgb(255, 236, 195);
+    border-radius: 25px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 30px;
 }
 
 .contactHeader{
@@ -16,18 +15,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .contactInfo{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    width: 60%;
+    gap: 10px;
 }
 
 .contactInfoElement{
-    height: 150px;
-    width: 250px;
-    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfoElement:hover{
+    background-color: white;
 }
