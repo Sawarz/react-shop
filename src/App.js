@@ -32,7 +32,7 @@ function App() {
       appChildren = 
         <div className='mobile-page'>
           <MobileNavbar></MobileNavbar>     
-          <div className='page-content'>
+          <div className='mobile-page-content'>
             <MobileContent></MobileContent>
           </div>
             <Footer></Footer>
@@ -42,7 +42,7 @@ function App() {
       appChildren = 
         <div className='desktop-page'>
           <Navbar></Navbar>
-          <div className='page-content'>
+          <div className='desktop-page-content'>
             <Footer></Footer>
           </div>
         </div>

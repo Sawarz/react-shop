@@ -7,6 +7,10 @@
   height: 100vw;
 }
 
+.desktop-page{
+  background-color:rgb(81, 110, 206);
+}
+
 .mobile-page-content{
   padding-top: 80px;
   margin: 10px;
@@ -14,7 +18,7 @@
 }
 
 .desktop-page-content{
-  padding-top: 80px;
+  padding-top: 100px;
   margin: 10px;
   margin-top: 0px;
   width: 60vw;
