@@ -1,0 +1,22 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "useState",
+            "src": "useState.png",
+            "price": "50$"
+        },
+        {
+            "id": 2,
+            "name": "useEffect",
+            "src":"useEffect.png",
+            "price": "70$"
+        },
+        {
+            "id": 3,
+            "name": "Store",
+            "src":"redux-store.png",
+            "price": "20$"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+.product{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+}
+
+.imgWrapper{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgWrapper > img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
