@@ -19,11 +19,12 @@
     height: 100%;
     padding: 20px;
     text-decoration: none;
+    font-weight: 600;
     color: black;
 }
 
 .currentLocation{
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.10686281348476889) 32%, rgba(0,0,0,0.05644264541754207) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.12647065662202384) 0%, rgba(255,255,255,0.05644264541754207) 100%);
     border-bottom: 5px solid red;
 }
