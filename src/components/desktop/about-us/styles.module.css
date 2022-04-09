@@ -1,10 +1,12 @@
 .aboutUs{
     margin: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color: white;
 }
 
 .h1Style{
@@ -39,7 +41,7 @@
 }
 
 .blueDot{
-    color: blue;
+    color: rgb(81, 110, 206);
     font-size: xx-large;
 }
 
@@ -48,7 +50,7 @@
 }
 
 .underH2Line{
-    background-color: blue;
+    background-color: rgb(81, 110, 206);
     border-radius: 5px;
     width: 30px;
     height: 5px;
