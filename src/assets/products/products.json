@@ -4,19 +4,29 @@
             "id": 1,
             "name": "useState",
             "src": "useState.png",
-            "price": "50$"
+            "price": "50$",
+            "category": "Hook",
+            "numOfReviews": "56",
+            "stars": 4,
+            "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
         {
             "id": 2,
             "name": "useEffect",
             "src":"useEffect.png",
-            "price": "70$"
+            "price": "70$",
+            "category": "Hook",
+            "numOfReviews": "121",
+            "stars": 5
         },
         {
             "id": 3,
-            "name": "Store",
-            "src":"redux-store.png",
-            "price": "20$"
+            "name": "store",
+            "src":"store.png",
+            "price": "20$",
+            "category": "Redux",
+            "numOfReviews": "37",
+            "stars": 3
         }
     ]
 }
