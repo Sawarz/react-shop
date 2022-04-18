@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './styles.module.css'
-import { Routes, Route } from 'react-router'
 import Product from './productInfo/ProductInfo.js'
 import data from '../../../assets/products/products.json'
 
@@ -13,9 +12,6 @@ export default function Products() {
 
   return (
     <div className={styles.products}>
-      <Routes>
-        <Route path="products/:product" element={<Product/>}></Route>
-      </Routes>
       <h1 className={styles.productsH1}>Our products</h1>
       <div className={styles.resultsSorting}>
         <div className={styles.results}>Showing 1-8 of 30 results</div>

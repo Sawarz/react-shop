@@ -1,6 +1,6 @@
 .product{
     font-size: 1.5rem;
-    padding-top: 5%;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -9,13 +9,14 @@
 .mainInfo{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .imgWrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .productImg{
@@ -23,9 +24,9 @@
 }
 
 .shortInfo{
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
+    flex-basis: 50%;
     gap: 5px;
 }
 
@@ -35,4 +36,8 @@
 
 .category{
     font-style: italic;
+}
+
+.description{
+    font-size: 1rem;
 }
