@@ -29,28 +29,6 @@ function App() {
 
   if(isMobile === true) device = "Mobile";
   if(isDesktop === true) device = "Desktop";
-  
-  switch (device) {
-    case "Mobile":
-      appChildren = 
-        <div className='mobile-page'>
-          <MobileNavbar></MobileNavbar>     
-          <div className='mobile-page-content'>
-            <MobileContent></MobileContent>
-          </div>
-            <Footer></Footer>
-        </div>
-      break;
-    case "Desktop":
-      appChildren = 
-        <div className='desktop-page'>
-          <Navbar></Navbar>
-          <div className='desktop-page-content'>
-            <Footer></Footer>
-          </div>
-        </div>
-      break;
-  }
 
   return (
   <Provider store={store}>
