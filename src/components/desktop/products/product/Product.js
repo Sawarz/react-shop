@@ -1,3 +1,4 @@
+/* eslint-disable no-fallthrough */
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
 import styles from './styles.module.css'
@@ -20,6 +21,7 @@ export default function Product() {
 
     (function determineStars() {
         console.log(product.stars);
+        // eslint-disable-next-line default-case
         switch (product.stars) {
             case 5:
                 stars[4] = starFilled;
@@ -62,7 +64,6 @@ export default function Product() {
                   <div className={styles.description}>
                       {product.description}
                   </div>
-                  <div className={styles.infoReviews}></div>
                   <div className={styles.mainAdvantages}></div>
               </div>
           </div>
