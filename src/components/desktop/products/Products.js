@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from './styles.module.css'
+import { useSearchParams } from 'react-router-dom'
 import Product from './productInfo/ProductInfo.js'
 import data from '../../../assets/products/products.json'
 
 export default function Products() {
+  const [searchParams] = useSearchParams();
+  let productCategory = searchParams.get("category");
+  console.log(productCategory)
   let products = data.products;
   let imgs = [];
   for (let i = 0; i < products.length; i++){
@@ -19,8 +23,9 @@ export default function Products() {
       </div>
       <div className={styles.productsSorted}>
       {products.map((product, i) => {
+          if(productCategory === products[i].category || productCategory === null)
           return (
-            <Product product={data.products[i]}></Product>
+            <Product product={products[i]}></Product>
           )
         })
         }
