@@ -27,9 +27,10 @@ export default function Matrix(props) {
         context.fillStyle =`rgba(0,0,0,0.1)`;
         context.fillRect(0, 0, canvasRef.current.width, canvasRef.current.height)
       }
-      setInterval(()=>{
+      const interval = setInterval(()=>{
         matrixAnimation();
       }, speed)
+      return () => clearInterval(interval);
     }, [])
     
 
