@@ -1,0 +1,33 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 120px;
+    background-color: lightblue;
+}
+
+.poster{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.posterContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.motto{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.mottoHighlight{
+    font-weight: 700;
+    color: blue;
+}

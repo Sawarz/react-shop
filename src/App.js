@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import './App.css';
 import { useMediaQuery } from 'react-responsive';
 import { HashRouter, Routes, Route } from "react-router-dom";
@@ -6,6 +7,7 @@ import store from './components/redux/Store';
 import Footer from './components/desktop&mobile/footer/Footer.js';
 import Navbar from './components/desktop/navbar/navbar/Navbar';
 import DesktopRouteWrapper from './components/desktop/desktop-route-wrapper/DesktopRouteWrapper';
+import Home from './components/desktop/home/Home';
 import Products from './components/desktop/products/Products';
 import Product from './components/desktop/products/product/Product';
 import Contact from './components/desktop/contact/Contact';
@@ -54,8 +56,8 @@ function App() {
   <Provider store={store}>
     <HashRouter>
       <Routes>
-        <Route path="/" element={appChildren}></Route>
-        <Route path="/home" element={appChildren}></Route> 
+        <Route path="/" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileContact />} /> : <Home />}></Route>
+        <Route path="/home" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileContact />} /> : <Home />}></Route> 
         <Route path="/products" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileProducts />} /> : <DesktopRouteWrapper component={<Products />}/>}></Route>
         <Route path="/products/:product" element={device === "Mobile" ? <MobileRouteWrapper component={<Product />} /> : <DesktopRouteWrapper component={<Product />}/>}></Route>
         <Route path="/contact" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileContact />} /> : <DesktopRouteWrapper component={<Contact />}/>}></Route>
