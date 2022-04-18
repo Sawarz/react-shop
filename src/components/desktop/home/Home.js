@@ -13,9 +13,9 @@ export default function Home() {
         <div className={styles.poster}>
           <div className={styles.posterContent}>
             <div className={styles.motto}>Start a <span className={styles.mottoHighlight}>React</span>ion.</div>
-            <Link className={styles.category} to="/products?category=Hooks">Try our Hooks!</Link>
+            <Link className={styles.category} to="/products?category=Hook">Try our Hooks!</Link>
             <Link className={styles.category} to="/products?category=Redux">Check out Redux!</Link>
-            <Link className={styles.category} to="/products?category=Props">Get new Props!</Link>
+            <Link className={styles.category} to="/products?category=Prop">Get new Props!</Link>
           </div>
           <Matrix speed={12} lettersColor="green" letterSize={5}></Matrix>
           <div className={styles.banner}></div>
