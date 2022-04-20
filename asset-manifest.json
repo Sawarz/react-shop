@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/react-shop/static/css/main.eca5633e.css",
-    "main.js": "/react-shop/static/js/main.7b042606.js",
+    "main.css": "/react-shop/static/css/main.dda3de38.css",
+    "main.js": "/react-shop/static/js/main.8dd47a3c.js",
     "static/js/787.affa5bbf.chunk.js": "/react-shop/static/js/787.affa5bbf.chunk.js",
+    "static/media/socialMediaApp.png": "/react-shop/static/media/socialMediaApp.bcc46838cadcbb39afea.png",
+    "static/media/recipeSite.png": "/react-shop/static/media/recipeSite.3c7aab7ab1534725f60e.png",
     "static/media/about-us.png": "/react-shop/static/media/about-us.d51d54178e229dc5b13e.png",
+    "static/media/weatherApp.png": "/react-shop/static/media/weatherApp.2ac9b383b7f34d4a416f.png",
+    "static/media/toDoList.png": "/react-shop/static/media/toDoList.6f144ff8d2579a5dca20.png",
     "static/media/LogoImg.png": "/react-shop/static/media/LogoImg.00ecb23b7ebc5e7c3a52.png",
     "static/media/useEffect.png": "/react-shop/static/media/useEffect.1c8acdfff6c8f323a760.png",
     "static/media/useState.png": "/react-shop/static/media/useState.e2b2f4153f68069a983f.png",
     "static/media/shopping-cart.png": "/react-shop/static/media/shopping-cart.96c73cb49987ccdf1154.png",
     "static/media/store.png": "/react-shop/static/media/store.f6e22de5ab65fb671afd.png",
     "index.html": "/react-shop/index.html",
-    "main.eca5633e.css.map": "/react-shop/static/css/main.eca5633e.css.map",
-    "main.7b042606.js.map": "/react-shop/static/js/main.7b042606.js.map",
+    "static/media/react.svg": "/react-shop/static/media/react.928f956d9c8ebcffb98a.svg",
+    "main.dda3de38.css.map": "/react-shop/static/css/main.dda3de38.css.map",
+    "main.8dd47a3c.js.map": "/react-shop/static/js/main.8dd47a3c.js.map",
     "787.affa5bbf.chunk.js.map": "/react-shop/static/js/787.affa5bbf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eca5633e.css",
-    "static/js/main.7b042606.js"
+    "static/css/main.dda3de38.css",
+    "static/js/main.8dd47a3c.js"
   ]
 }
