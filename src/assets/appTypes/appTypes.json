@@ -1,0 +1,25 @@
+{
+    "appTypes":
+    [
+        {
+            "name": "ToDoList",
+            "src": "toDoList.png"
+        },
+        {
+            "name": "RecipeSite",
+            "src": "recipeSite.png"
+        },
+        {
+            "name": "WeatherApp",
+            "src": "weatherApp.png"
+        },
+        {
+            "name": "Calculator",
+            "src": "calculator.png"
+        },
+        {
+            "name": "SocialMediaApp",
+            "src": "socialMediaApp.png"
+        }
+    ]
+}
