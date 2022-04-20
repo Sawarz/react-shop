@@ -3,14 +3,14 @@ import styles from './styles.module.css'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router'
 import Logo from '../../../desktop&mobile/logo/Logo'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
   const [productsClassnames, setProductsClassnames] = useState(styles.navbarLink)
   const [aboutUsClassnames, setAboutUsClassnames] = useState(styles.navbarLink)
   const [contactClassnames, setContactClassnames] = useState(styles.navbarLink)
   let location = useLocation();
-
-  console.log("rerender");
 
   const productsRef = useRef(null);
   const aboutusRef = useRef(null);
@@ -21,9 +21,6 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    console.log("xd2");
-    let element;
-    console.log(location.pathname);
     switch (location.pathname) {
       case getLastSegment(productsRef.current.href):
         setProductsClassnames(`${styles.navbarLink} ${styles.currentLocation}`)
@@ -50,6 +47,9 @@ export default function Navbar() {
       <Link ref={productsRef} className={productsClassnames} to='/products'>Products</Link>
       <Link ref={aboutusRef} className={aboutUsClassnames} to='/about-us'>About us</Link>
       <Link ref={contactRef} className={contactClassnames} to='/contact'>Contact</Link>
+      <Link to="/shopping-cart" className={styles.navbarLink}>
+        <FontAwesomeIcon icon={faShoppingCart} size="lg"></FontAwesomeIcon>
+      </Link>
     </div> 
   )
 }
