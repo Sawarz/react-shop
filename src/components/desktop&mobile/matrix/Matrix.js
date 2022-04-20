@@ -3,12 +3,14 @@ import styles from './styles.module.css'
 
 export default function Matrix(props) {
   const canvasRef = useRef();
-  let letters = undefined;
-    let speed = props.speed;
+  let speed = props.speed;
+  
+  useEffect(() => {
+    canvasRef.current.style.width = props.size + "px";
+    canvasRef.current.style.height = props.size + "px";
+    let letters = undefined;
     let columnSize;
     let context;
-
-    useEffect(() => {
       columnSize = canvasRef.current.width/props.letterSize;
       letters = Array(columnSize).fill(0);
       context = canvasRef.current.getContext("2d");
@@ -31,7 +33,7 @@ export default function Matrix(props) {
         matrixAnimation();
       }, speed)
       return () => clearInterval(interval);
-    }, [])
+    }, [props.font, props.letterSize, props.lettersColor, speed])
     
 
   return (
