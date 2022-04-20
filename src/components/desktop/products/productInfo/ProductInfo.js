@@ -4,7 +4,6 @@ import styles from './styles.module.css'
 
 export default function ProductInfo(props) {
     let imgSrc = require(`../../../../assets/products/${props.product.src}`);
-    console.log(props.product);
   
   return (
       <Link className={styles.product} to={`/products/${props.product.name}`}>
