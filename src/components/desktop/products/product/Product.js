@@ -25,9 +25,7 @@ export default function Product() {
         switch (product.stars) {
             case 5:
                 stars[4] = starFilled;
-                console.log("5")
             case 4:
-                console.log("es")
                 stars[3] = starFilled;
             case 3:
                 stars[2] = starFilled;
