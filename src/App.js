@@ -18,6 +18,7 @@ import MobileRouteWrapper from './components/mobile/mobile-route-wrapper/MobileR
 import MobileContact from './components/mobile/contact/Contact';
 import MobileProducts from './components/mobile/products/Products';
 import MobileAboutUs from './components/mobile/about-us/AboutUs';
+import Cart from './components/desktop/cart/Cart';
 
 function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
@@ -25,7 +26,6 @@ function App() {
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
 
   let device;
-  let appChildren;
 
   if(isMobile === true) device = "Mobile";
   if(isDesktop === true) device = "Desktop";
@@ -40,6 +40,7 @@ function App() {
         <Route path="/products/:product" element={device === "Mobile" ? <MobileRouteWrapper component={<Product />} /> : <DesktopRouteWrapper component={<Product />}/>}></Route>
         <Route path="/contact" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileContact />} /> : <DesktopRouteWrapper component={<Contact />}/>}></Route>
         <Route path="/about-us" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileAboutUs />} /> : <DesktopRouteWrapper component={<AboutUs />} />}></Route>
+        <Route path="/shopping-cart" element={<Cart></Cart>}></Route>
       </Routes>
     </HashRouter>
   </Provider>
