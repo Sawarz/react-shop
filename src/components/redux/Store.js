@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import currentRouteSlice from "./currentRouteSlice";
+import shoppingCartSlice from "./shoppingCartSlice";
 
 export default configureStore({
     reducer: {
-        currentRoute: currentRouteSlice
+        shoppingCart: shoppingCartSlice
     }
 })
