@@ -30,7 +30,7 @@ export default function AboutUs() {
 				</p>
 			</section>
 			<section className={styles.section}>
-        <h2 className={styles.headerText}>What we do for our customers</h2>
+        <h2 className={styles.headerText}>What we do for our customers  <Emoji symbol="👐" label="open hands" /></h2>
         <div className={styles.underH2Line}></div>
 				<p className={styles.text}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
@@ -40,7 +40,7 @@ export default function AboutUs() {
 				</p>
 			</section>
 			<section className={styles.section}>
-        <h2 className={styles.headerText}>Our mission</h2>
+        <h2 className={styles.headerText}>Our mission <Emoji symbol="🕵️" label="agent" /></h2>
         <div className={styles.underH2Line}></div>
 				<p className={styles.text}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
