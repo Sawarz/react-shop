@@ -2,23 +2,28 @@
     "appTypes":
     [
         {
-            "name": "ToDoList",
+            "category": "ToDoList",
+            "title": "To Do List",
             "src": "toDoList.png"
         },
         {
-            "name": "RecipeSite",
+            "category": "RecipeSite",
+            "title": "Recipe Site",
             "src": "recipeSite.png"
         },
         {
-            "name": "WeatherApp",
+            "category": "WeatherApp",
+            "title": "Weather App",
             "src": "weatherApp.png"
         },
         {
-            "name": "Calculator",
+            "category": "Calculator",
+            "title": "Calculator",
             "src": "calculator.png"
         },
         {
-            "name": "SocialMediaApp",
+            "category": "SocialMediaApp",
+            "title": "Social Media App",
             "src": "socialMediaApp.png"
         }
     ]
