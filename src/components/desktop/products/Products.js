@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import React from 'react'
 import styles from './styles.module.css'
 import { useSearchParams } from 'react-router-dom'
 import Product from './productInfo/ProductInfo.js'
@@ -7,7 +7,8 @@ import data from '../../../assets/products/products.json'
 export default function Products() {
   let allResults = 0
   let showedResults = 0;
-  let defaultResultsPerPage = 30;
+  let defaultResultsPerPage = 15;
+  let renderedProducts = 0;
 
   const [searchParams] = useSearchParams();
   let productCategory = searchParams.get("category");
@@ -21,9 +22,13 @@ export default function Products() {
   products.forEach((product, i) => {
     if (productCategory === products[i].category || productCategory === null) {
       allResults++;
-      showedResults = allResults % defaultResultsPerPage;
     }
   });
+
+  if (allResults > defaultResultsPerPage) showedResults = defaultResultsPerPage;
+  else {
+    showedResults = allResults;
+  }
   
   return (
     <div className={styles.products}>
@@ -33,16 +38,18 @@ export default function Products() {
         <div className={styles.sorting}>No sorting</div>
       </div>
       <div className={styles.productsSorted}>
-      {products.map((product, i) => {
-        if (productCategory === products[i].category || productCategory === null) {
-          return (
-            <Product product={products[i]}></Product>
-          )
-        }
-        else {
-          return null;
-        }
-          
+        {products.map((product, i) => {
+          if (renderedProducts<(defaultResultsPerPage)) {
+            if (productCategory === products[i].category || productCategory === null) {
+              renderedProducts++;
+              return (
+                <Product product={products[i]}></Product>
+              )
+            }
+          }
+          else {
+            return null;
+          }
         })
         }
       </div>
