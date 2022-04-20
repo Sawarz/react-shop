@@ -9,6 +9,7 @@
     align-items: center;
     width: 70%;
     border: 2px solid black;
+    gap: 15px;
 }
 
 .imgWrapper{
@@ -24,4 +25,8 @@
     max-width: 100%;
     width: 100%;
     height: auto;
+}
+
+.price{
+    font-weight: 600;
 }
