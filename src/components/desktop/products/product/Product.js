@@ -6,8 +6,13 @@ import data from '../../../../assets/products/products.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as starEmpty} from '@fortawesome/free-regular-svg-icons'
 import { faStar as starFilled } from '@fortawesome/free-solid-svg-icons'
+import { useSelector, useDispatch } from 'react-redux'
+import { add, remove } from '../../../redux/shoppingCartSlice.js'
 
 export default function Product() {
+    const dispatch = useDispatch();
+    const shoppingCart = useSelector((state)=>state.shoppingCart);
+
     let product;
     
     let stars = [starEmpty, starEmpty, starEmpty, starEmpty, starEmpty];
@@ -20,7 +25,6 @@ export default function Product() {
     let imgSrc = require(`../../../../assets/products/${product.name}.png`);
 
     (function determineStars() {
-        console.log(product.stars);
         // eslint-disable-next-line default-case
         switch (product.stars) {
             case 5:
@@ -36,9 +40,6 @@ export default function Product() {
         }
     })();
 
-    useEffect(() => {
-       console.log(product); 
-    },[])
   return (
       <div className={styles.product}>
           <div className={styles.mainInfo}>
@@ -63,6 +64,9 @@ export default function Product() {
                       {product.description}
                   </div>
                   <div className={styles.mainAdvantages}></div>
+                  <button className={styles.addToCart} onClick={() => {
+                      dispatch(add(product))
+                  }}>Add to shopping cart</button>
               </div>
           </div>
     </div>
