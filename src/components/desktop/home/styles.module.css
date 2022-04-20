@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
-
 .home{
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-color: lightblue;
+    background-color:rgb(81, 110, 206);
     gap: 60px;
 }
 
@@ -29,11 +27,12 @@
 .motto{
     font-weight: 500;
     font-size: 5rem;
+    color: white;
 }
 
 .mottoHighlight{
     font-weight: 700;
-    color: blue;
+    color: rgb(0, 191, 255);
 }
 
 .category{
@@ -46,6 +45,7 @@
     border: 2px solid black;
     border-style: outset;
     box-shadow: 10px 10px rgba(0,0,0,.25);
+    
 }
 
 .hrStyle{
@@ -56,7 +56,7 @@
     background-color: black;
     background-image: url(../../../assets/react.svg);
     background-size: 60px 60px;
-    width: 100vw;
+    width: 100%;
 }
 
 .popularNow{
@@ -65,6 +65,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    color: white;
 }
 
 .popularTitle{
@@ -87,6 +88,7 @@
     border: 1px solid gray;
     font-size: 1.3rem;
     font-weight: 600;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .appTypeTitle{
@@ -95,6 +97,7 @@
     font-family: 'Rubik', sans-serif;
     width: 90%;
     text-align: left;
+    color: white;
 }
 
 .appTypeContainer{
@@ -109,7 +112,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.appTypeHeader{
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.appTypeLink{
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
+    height: 90%;
 }
 
 .appTypeImg{
@@ -118,12 +138,3 @@
     height: 100%;
 }
 
-.appTypeLink{
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border: 1px solid gray;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
