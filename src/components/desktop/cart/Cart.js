@@ -12,7 +12,8 @@ export default function Cart() {
     }
 
     let lowerButtonsContainer = <div className={styles.lowerButtons}>
-                                    <div>XD</div>
+                                    <Link className={styles.cartLink} to="/">Continue shopping</Link>
+                                    <Link className={styles.cartLink} to="/">Payment</Link>
                                 </div>
     
     function renderCart() {
@@ -20,21 +21,23 @@ export default function Cart() {
             return (<div className={styles.cartContainer}>
                 {shoppingCart.map((item, i) => {
                     return (<div className={styles.cartItem}>
-                        <img className={styles.productImg} src={imgs[i]}></img>
-                        <div className={styles.productInfo}>
-                            <div className={styles.productName}>{item.name}</div></div>
-                        </div>)
+                                <img className={styles.productImg} src={imgs[i]}></img>
+                                <div className={styles.productInfo}>
+                            <div className={styles.productName}>{item.name}</div>
+                            <div className={styles.productQuantity}>{}</div>
+                                </div>
+                            </div>)
                 })}
                 {lowerButtonsContainer}
             </div>)
         }
         else {
             return (<div className={styles.cartContainer}>
-                <div className={styles.cartContent}>
-                    <div className={styles.noItems}>No items in shopping cart.</div>
-                </div>
-                {lowerButtonsContainer}
-            </div>)
+                        <div className={styles.cartContent}>
+                            <div className={styles.noItems}>No items in shopping cart.</div>
+                        </div>
+                        {lowerButtonsContainer}
+                    </div>)
         }
         
     }
