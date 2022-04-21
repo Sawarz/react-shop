@@ -1,14 +1,14 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Emoji from '../emoji/Emoji.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
-    const text = "Made by Tomasz Sawarzyński "
   return (
     <footer className={styles.footer}>
-          <div>{text}
-              <Emoji symbol="🐝" label="bee"></Emoji>
-        </div>
+        <p>Made by Tomasz Sawarzyński <Emoji symbol="🐝" label="bee"></Emoji></p>
+        <p>Github: <a href="https://github.com/Sawarz"><FontAwesomeIcon icon={faCodeBranch} size="lg"></FontAwesomeIcon></a></p>
     </footer>
   )
 }
