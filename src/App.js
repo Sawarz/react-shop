@@ -1,19 +1,16 @@
 /* eslint-disable default-case */
 import './App.css';
+import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { HashRouter, Routes, Route } from "react-router-dom";
-import { Provider } from 'react-redux';
-import store from './components/redux/Store';
-import Footer from './components/desktop&mobile/footer/Footer.js';
-import Navbar from './components/desktop/navbar/navbar/Navbar';
+import { useSelector } from 'react-redux';
+import { saveState } from './components/redux/localStorage';
 import DesktopRouteWrapper from './components/desktop/desktop-route-wrapper/DesktopRouteWrapper';
 import Home from './components/desktop/home/Home';
 import Products from './components/desktop/products/Products';
 import Product from './components/desktop/products/product/Product';
 import Contact from './components/desktop/contact/Contact';
 import AboutUs from './components/desktop/about-us/AboutUs';
-import MobileNavbar from './components/mobile/navbar/MobileNavbar';
-import MobileContent from './components/mobile/content/MobileContent';
 import MobileRouteWrapper from './components/mobile/mobile-route-wrapper/MobileRouteWrapper';
 import MobileContact from './components/mobile/contact/Contact';
 import MobileProducts from './components/mobile/products/Products';
@@ -28,10 +25,15 @@ function App() {
   let device;
 
   if(isMobile === true) device = "Mobile";
-  if(isDesktop === true) device = "Desktop";
+  if (isDesktop === true) device = "Desktop";
+  
+  let appState = useSelector((state) => state.shoppingCart);
+
+    useEffect(() => {
+        saveState(appState);
+    }, [appState])
 
   return (
-  <Provider store={store}>
     <HashRouter>
       <Routes>
         <Route path="/" element={device === "Mobile" ? <MobileRouteWrapper component={<MobileContact />} /> : <Home />}></Route>
@@ -43,7 +45,6 @@ function App() {
         <Route path="/shopping-cart" element={<Cart></Cart>}></Route>
       </Routes>
     </HashRouter>
-  </Provider>
   );
 }
 
