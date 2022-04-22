@@ -2,26 +2,31 @@
     "appTypes":
     [
         {
+            "id": 1,
             "category": "ToDoList",
             "title": "To Do List",
             "src": "toDoList.png"
         },
         {
+            "id": 2,
             "category": "RecipeSite",
             "title": "Recipe Site",
             "src": "recipeSite.png"
         },
         {
+            "id": 3,
             "category": "WeatherApp",
             "title": "Weather App",
             "src": "weatherApp.png"
         },
         {
+            "id": 4,
             "category": "Calculator",
             "title": "Calculator",
             "src": "calculator.png"
         },
         {
+            "id": 5,
             "category": "SocialMediaApp",
             "title": "Social Media App",
             "src": "socialMediaApp.png"
