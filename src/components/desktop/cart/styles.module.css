@@ -35,8 +35,49 @@
 }
 
 .productName{
+    width: 5%;
     font-weight: 600;
+    font-size: 2rem;
+}
+
+.productInfo{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.productQuantity{
+    font-size: 1.5rem;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: center;
+}
+
+
+.quantityWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.quantityButton{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine;
+    box-shadow: 0 1px 2px rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}
+
+.productPrice{
     font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .lowerButtons{
