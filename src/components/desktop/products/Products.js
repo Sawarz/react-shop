@@ -43,7 +43,7 @@ export default function Products() {
             if (productCategory === products[i].category || productCategory === null) {
               renderedProducts++;
               return (
-                <Product product={products[i]}></Product>
+                <Product key={product.id} product={products[i]}></Product>
               )
             }
           }
