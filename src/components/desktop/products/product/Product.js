@@ -1,17 +1,16 @@
 /* eslint-disable no-fallthrough */
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useParams } from 'react-router'
 import styles from './styles.module.css'
 import data from '../../../../assets/products/products.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as starEmpty} from '@fortawesome/free-regular-svg-icons'
 import { faStar as starFilled } from '@fortawesome/free-solid-svg-icons'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { add, remove } from '../../../redux/shoppingCartSlice.js'
 
 export default function Product() {
     const dispatch = useDispatch();
-    const shoppingCart = useSelector((state)=>state.shoppingCart);
 
     let product;
     
