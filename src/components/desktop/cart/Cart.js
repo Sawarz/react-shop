@@ -24,7 +24,7 @@ export default function Cart() {
         if(shoppingCart[0]){
             return (<div className={styles.cartContainer}>
                 {shoppingCart.map((item, i) => {
-                    return (<div className={styles.cartItem}>
+                    return (<div key={item.data.id} className={styles.cartItem}>
                                 <img className={styles.productImg} src={imgs[i]}></img>
                                 <div className={styles.productInfo}>
                                     <div className={styles.productName}>{item.data.name}</div>
