@@ -40,7 +40,7 @@ export default function Home() {
         <div className={styles.appTypeContainer}>
           {appTypes.map((appType, i) => {
             return (
-              <div className={styles.appType}>
+              <div key={appType.id} className={styles.appType}>
                 <h1 className={styles.appTypeHeader}>{appType.title}</h1>
                 <Link className={styles.appTypeLink} to="/products?category=ToDoList">
                   <img className={styles.appTypeImg} src={imgs[i]}></img>
