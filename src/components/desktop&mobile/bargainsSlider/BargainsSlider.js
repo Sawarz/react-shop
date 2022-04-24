@@ -39,7 +39,7 @@ export default function BargainsSlider() {
       <div className={styles.dotsWrapper}>
         {bargains.map((bargain, i) => {
           return (
-            <SliderDot id={i} currentSlide={currentSlide}></SliderDot>
+            <SliderDot key={i} id={i} currentSlide={currentSlide}></SliderDot>
           )
         })
         }
