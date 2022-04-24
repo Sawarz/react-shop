@@ -1,8 +1,7 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 import styles from "./styles.module.css";
 import { Link } from "react-router-dom";
 import Logo from "../../desktop&mobile/logo/Logo.js"
-import NavElement from '../../desktop/navbar/nav-element/NavElement';
 import HamburgerMenu from './hamburger/Hamburger.js';
 import HamburgerContent from './hamburger/HamburgerContent.js'
 import shoppingCartIcon from '../../../assets/icons/shopping-cart.png'
@@ -12,7 +11,6 @@ export default function MobileNavbar() {
     const [animation, setAnimation] = useState(false);
     
     function getAnimationState(animationState) {
-        console.log("pobrany state w navbarze " + animationState);
         setAnimation(animationState);
         if(animationState === true){
             setHamburgerContentStyle(styles.hamburgerContent + " " + styles.hamburgerContentIn);
@@ -21,10 +19,6 @@ export default function MobileNavbar() {
             setHamburgerContentStyle(styles.hamburgerContent + " " + styles.hamburgerContentOut);
         }
     }
-
-    useEffect(() => {
-        console.log("zmiana w navbarze " + animation);
-    },[animation])
 
   return (
     <div className={styles.navbar}>

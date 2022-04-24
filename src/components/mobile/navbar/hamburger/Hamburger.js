@@ -5,7 +5,6 @@ export default function HamburgerMenu(props) {
   const [hamburgerLineStyle, setHamburgerLineStyle] = useState(styles.hamburgerLine);
 
   useEffect(() => {
-    console.log("zmiana w X " + props.animation);
     props.getAnimationState(props.animation);
     if (props.animation === true) {
       setHamburgerLineStyle(styles.hamburgerLine + " " + styles.hamburgerLineAnimationIn);
