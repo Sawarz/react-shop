@@ -13,6 +13,10 @@
   background-color:rgb(81, 110, 206);
 }
 
+.mobile-page{
+  background-color:rgba(172, 191, 255, 0.425);
+}
+
 .mobile-page-content{
   padding-top: 80px;
   margin: 10px;
