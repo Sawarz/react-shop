@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styles.module.css'
 import BargainsSlider from '../../desktop&mobile/bargainsSlider/BargainsSlider'
 import Categories from '../categories/Categories'
-import Products from '../products/Products'
+import Products from '../../desktop&mobile/products/Products'
 
 export default function MobileContent() {
   return (
