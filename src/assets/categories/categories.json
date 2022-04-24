@@ -2,18 +2,23 @@
     "categories":
     [
         {
+            "id": 1,
             "name": "Hooks"
         },
         {
+            "id": 2,
             "name": "Props"
         },
         {
+            "id": 3,
             "name": "JSX"
         },
         {
+            "id": 4,
             "name": "Router"
         },
         {
+            "id": 5,
             "name": "Redux"
         }
     ]
