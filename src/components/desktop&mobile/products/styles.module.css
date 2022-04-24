@@ -1,4 +1,4 @@
-.products{
+.products, .productsMobile{
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,14 @@
     background-color: white;
     gap: 20px;
     border-radius: 10px;
+}
+
+.products{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.productsMobile{
+    border: 1px solid gray;
 }
 
 .productsH1{
@@ -22,10 +29,14 @@
     justify-content: space-between;
 }
 
-.productsSorted{
+.productsSorted, .productsSortedMobile{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     justify-items: center;
+}
+
+.productsSortedMobile{
+    grid-template-columns: 1fr 1fr;
 }
