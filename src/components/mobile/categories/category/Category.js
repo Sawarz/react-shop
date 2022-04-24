@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './styles.module.css'
+import { Link } from 'react-router-dom'
 
 export default function Category(props) {
   return (
-    <div className={styles.category}>
+    <Link className={styles.category} to={`/products?category=${props.name}`}>
       {props.name}
-    </div>
+    </Link>
   )
 }
