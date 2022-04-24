@@ -1,4 +1,6 @@
 .category{
+    text-decoration: none;
+    color: black;
     min-width: 35vw;
     height: 100px;
     display: flex;
@@ -6,7 +8,8 @@
     justify-content: center;
     border:1px solid gray;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
+    background-color: white;
 }
