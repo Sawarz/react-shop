@@ -8,6 +8,5 @@ export const loadState = () => {
 
 export const saveState = (state) => {
     const serialState = JSON.stringify(state);
-    console.log(serialState);
     localStorage.setItem('appState', serialState);
 };
