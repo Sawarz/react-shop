@@ -15,7 +15,7 @@ export default function Categories() {
         <div className={styles.categories}>
             {categories.map((category, i) => {
                 return (
-                    <Category name={categories[i].name}></Category>
+                    <Category key={category.id} name={categories[i].name}></Category>
                 )
             })}</div>    
     </div>
