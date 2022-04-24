@@ -1,0 +1,31 @@
+.payment{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 40vw;
+    background-color: lightblue;
+    box-shadow: 0 1px 2px rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    height: 10vh;
+    width: 40vw;
+    background-color: lightcoral;
+    box-shadow: 0 1px 2px rgba(60,64,67,.3),0 2px 6px 2px rgba(60,64,67,.15);
+}

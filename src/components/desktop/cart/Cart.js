@@ -17,7 +17,7 @@ export default function Cart() {
 
     let lowerButtonsContainer = <div className={styles.lowerButtons}>
                                     <Link className={styles.cartLink} to="/">Continue shopping</Link>
-                                    <Link className={styles.cartLink} to="/">Payment</Link>
+                                    <Link className={styles.cartLink} to="/payment">Payment</Link>
     </div>
     
     function renderCart() {
@@ -37,8 +37,8 @@ export default function Cart() {
                                     <button className={styles.quantityButton} onClick={() => {
                                         dispatch(remove(item.data))
                                 }}>-</button>
-                                <div className={styles.productPrice}>{item.data.price}</div>
-                                    </div>
+                            </div>
+                            <div className={styles.productPrice}>{item.data.price}</div>
                                 </div>
                             </div>)
                 })}
