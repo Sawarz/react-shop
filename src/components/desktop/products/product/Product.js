@@ -1,5 +1,5 @@
 /* eslint-disable no-fallthrough */
-import React from 'react'
+import { React, useState } from 'react'
 import { useParams } from 'react-router'
 import styles from './styles.module.css'
 import data from '../../../../assets/products/products.json'
@@ -8,8 +8,14 @@ import { faStar as starEmpty} from '@fortawesome/free-regular-svg-icons'
 import { faStar as starFilled } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from 'react-redux'
 import { add, remove } from '../../../redux/shoppingCartSlice.js'
+import PopUp from '../../../desktop&mobile/popUp/PopUp'
 
 export default function Product() {
+    const [popUpOpen, setPopUpOpen] = useState(false);
+    function togglePopUp() {
+        setPopUpOpen(!popUpOpen);
+      }
+
     const dispatch = useDispatch();
 
     let product;
@@ -41,6 +47,7 @@ export default function Product() {
 
   return (
       <div className={styles.product}>
+          {popUpOpen ? <PopUp toggle={togglePopUp} product={product}/> : null}
           <div className={styles.mainInfo}>
               <div className={styles.imgWrapper}>
                 <img className={styles.productImg} src={imgSrc} alt={product.name}></img>
@@ -64,6 +71,7 @@ export default function Product() {
                   </div>
                   <div className={styles.mainAdvantages}></div>
                   <button className={styles.addToCart} onClick={() => {
+                      togglePopUp();
                       dispatch(add(product))
                   }}>Add to shopping cart</button>
               </div>
