@@ -2,12 +2,12 @@
     "bargains":[
         {
             "id": 1,
-            "name": "Bargain 1",
+            "name": "useState",
             "src": "useState.png"
         },
         {
             "id": 2,
-            "name": "Bargain 2",
+            "name": "useEffect",
             "src":"useEffect.png"
         }
     ]
