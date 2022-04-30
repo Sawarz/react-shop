@@ -1,0 +1,43 @@
+.contact{
+    padding: 20px;
+    display: flex;
+    background-color: rgb(255, 236, 195);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.contactHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contactInfoElement{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfoElement:hover{
+    background-color: white;
+}
