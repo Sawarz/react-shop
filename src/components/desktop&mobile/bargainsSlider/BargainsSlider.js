@@ -1,4 +1,5 @@
 import { React, useState } from 'react'
+import { Link } from 'react-router-dom';
 import styles from './styles.module.css';
 import data from '../../../assets/bargains/bargains.json'
 import SliderButton from './sliderButton/SliderButton';
@@ -29,11 +30,14 @@ export default function BargainsSlider() {
   for (let i = 0; i < bargains.length; i++){
     imgs[i] = require(`../../../assets/bargains/${bargains[i].src}`);
   }
+
   return (
     <div className={styles.bargainsWrapper}>
       <div className={styles.bargainsSlider}>
         <SliderButton direction="left" onClick={handleClick}></SliderButton>
-        <img src={imgs[currentSlide]} width="130px" ></img>
+        <Link to={`/products/${bargains[currentSlide].name}`}>
+          <img src={imgs[currentSlide]} width="130px" ></img>
+        </Link>
         <SliderButton direction="right" onClick={handleClick}></SliderButton>
       </div>
       <div className={styles.dotsWrapper}>
