@@ -37,7 +37,7 @@ export default function Cart() {
                                         dispatch(remove(item.data))
                                 }}>-</button>
                             </div>
-                            <div className={styles.productPrice}>{item.data.price}</div>
+                            <div className={styles.productPrice}>{parseInt(item.data.price)*item.productCount}</div>
                                 </div>
                             </div>)
                 })}
