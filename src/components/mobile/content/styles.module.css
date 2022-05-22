@@ -1,6 +1,6 @@
 .mobileContent{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
 }

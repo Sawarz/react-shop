@@ -5,8 +5,8 @@
     border-radius: 20px;
     align-items: center;
     background: rgb(190,176,114);
-    background: linear-gradient(180deg, rgba(190,176,114,0.7595238779105392) 32%,
-    rgba(185,162,214,0.5634454465379901) 100%);
+    background: linear-gradient(90deg, rgba(33, 73, 204, 0.288) 32%,
+    rgba(237, 222, 255, 0.563) 100%);
     }
 
 .bargainsSlider{

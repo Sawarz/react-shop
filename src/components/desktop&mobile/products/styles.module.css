@@ -4,18 +4,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
     gap: 20px;
     border-radius: 10px;
 }
 
 .products{
+    background-color: white;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .productsMobile{
-    border: 1px solid gray;
+    padding-top: 0;
 }
+
 
 .productsH1{
     font-family: 'Rubik', sans-serif;

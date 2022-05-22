@@ -1,15 +1,16 @@
 .product{
     text-decoration: none;
+    border-radius: 5px;
     color: black;
-    background-color: white;
+    background-color: rgba(33, 73, 204, 0.288);
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 70%;
-    border: 2px solid black;
     gap: 15px;
+    box-shadow: 0 1px 2px rgba(60,64,67,.8),0 2px 6px 2px rgba(60,64,67,.35);
 }
 
 .imgWrapper{
