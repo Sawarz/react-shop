@@ -21,7 +21,7 @@
         },
         {
             "id": 3,
-            "name": "store",
+            "name": "useLayoutEffect",
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
@@ -30,129 +30,129 @@
         },
         {
             "id": 4,
-            "name": "useState",
+            "name": "useRef",
             "src": "useState.png",
-            "price": "50$",
+            "price": "100$",
             "category": "Hooks",
-            "numOfReviews": "56",
-            "stars": 4,
+            "numOfReviews": "102",
+            "stars": 1,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
         {
             "id": 5,
-            "name": "useEffect",
+            "name": "useMemo",
             "src":"useEffect.png",
-            "price": "70$",
+            "price": "35$",
             "category": "Hooks",
-            "numOfReviews": "121",
-            "stars": 5
+            "numOfReviews": "33",
+            "stars": 4
         },
         {
             "id": 6,
-            "name": "store",
+            "name": "useContext",
             "src":"store.png",
-            "price": "20$",
+            "price": "90$",
             "category": "Redux",
-            "numOfReviews": "37",
-            "stars": 3
+            "numOfReviews": "22",
+            "stars": 2
         },
         {
             "id": 7,
-            "name": "useState",
+            "name": "useCallback",
             "src": "useState.png",
-            "price": "50$",
+            "price": "60$",
             "category": "Hooks",
-            "numOfReviews": "56",
-            "stars": 4,
+            "numOfReviews": "26",
+            "stars": 3,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
         {
             "id": 8,
-            "name": "useEffect",
+            "name": "useFormik",
             "src":"useEffect.png",
             "price": "70$",
-            "category": "Hooks",
-            "numOfReviews": "121",
+            "category": "Formik",
+            "numOfReviews": "45",
             "stars": 5
         },
         {
             "id": 9,
-            "name": "store",
+            "name": "<Formik>",
             "src":"store.png",
             "price": "20$",
-            "category": "Redux",
+            "category": "Formik",
             "numOfReviews": "37",
             "stars": 3
         },
         {
             "id": 10,
-            "name": "useState",
+            "name": "<Field>",
             "src": "useState.png",
             "price": "50$",
-            "category": "Hooks",
+            "category": "Formik",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
         {
             "id": 11,
-            "name": "useEffect",
+            "name": "values",
             "src":"useEffect.png",
             "price": "70$",
-            "category": "Hooks",
+            "category": "Formik",
             "numOfReviews": "121",
             "stars": 5
         },
         {
             "id": 12,
-            "name": "store",
+            "name": "onSubmit",
             "src":"store.png",
             "price": "20$",
-            "category": "Redux",
+            "category": "Formik",
             "numOfReviews": "37",
             "stars": 3
         },
         {
             "id": 13,
-            "name": "useState",
+            "name": "validation",
             "src": "useState.png",
             "price": "50$",
-            "category": "Hooks",
+            "category": "Formik",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
         {
             "id": 14,
-            "name": "useEffect",
+            "name": "yup",
             "src":"useEffect.png",
             "price": "70$",
-            "category": "Hooks",
+            "category": "Formik",
             "numOfReviews": "121",
             "stars": 5
         },
         {
             "id": 15,
-            "name": "store",
+            "name": "useNavigate",
             "src":"store.png",
             "price": "20$",
-            "category": "Redux",
+            "category": "React-Router",
             "numOfReviews": "37",
             "stars": 3
         },
         {
             "id": 16,
-            "name": "useState",
+            "name": "<Link>",
             "src": "useState.png",
             "price": "50$",
-            "category": "Hooks",
+            "category": "React-Router",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
         {
             "id": 17,
-            "name": "useEffect",
+            "name": "Route",
             "src":"useEffect.png",
             "price": "70$",
             "category": "Hooks",
@@ -161,7 +161,7 @@
         },
         {
             "id": 18,
-            "name": "store",
+            "name": "BrowserRouter",
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
@@ -170,7 +170,7 @@
         },
         {
             "id": 19,
-            "name": "useState",
+            "name": "HashRouter",
             "src": "useState.png",
             "price": "50$",
             "category": "Hooks",
@@ -180,7 +180,7 @@
         },
         {
             "id": 20,
-            "name": "useEffect",
+            "name": "Slice",
             "src":"useEffect.png",
             "price": "70$",
             "category": "Hooks",
@@ -189,7 +189,7 @@
         },
         {
             "id": 21,
-            "name": "store",
+            "name": "Reducer",
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
@@ -198,7 +198,7 @@
         },
         {
             "id": 22,
-            "name": "useState",
+            "name": "Action",
             "src": "useState.png",
             "price": "50$",
             "category": "Hooks",
@@ -208,7 +208,7 @@
         },
         {
             "id": 23,
-            "name": "useEffect",
+            "name": "Dispatch",
             "src":"useEffect.png",
             "price": "70$",
             "category": "Hooks",
@@ -217,7 +217,7 @@
         },
         {
             "id": 24,
-            "name": "store",
+            "name": "Selector",
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
@@ -226,7 +226,7 @@
         },
         {
             "id": 25,
-            "name": "useState",
+            "name": "Store",
             "src": "useState.png",
             "price": "50$",
             "category": "Hooks",
@@ -236,7 +236,7 @@
         },
         {
             "id": 26,
-            "name": "useEffect",
+            "name": "Fragment",
             "src":"useEffect.png",
             "price": "70$",
             "category": "Hooks",
@@ -245,7 +245,7 @@
         },
         {
             "id": 27,
-            "name": "store",
+            "name": "Suspense",
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
@@ -254,7 +254,7 @@
         },
         {
             "id": 28,
-            "name": "useState",
+            "name": "Lazy",
             "src": "useState.png",
             "price": "50$",
             "category": "Hooks",
@@ -264,7 +264,7 @@
         },
         {
             "id": 29,
-            "name": "useEffect",
+            "name": "render",
             "src":"useEffect.png",
             "price": "70$",
             "category": "Hooks",
@@ -273,7 +273,7 @@
         },
         {
             "id": 30,
-            "name": "store",
+            "name": "LifecycleMethods",
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
@@ -282,59 +282,13 @@
         },
         {
             "id": 31,
-            "name": "useState",
+            "name": "constructor",
             "src": "useState.png",
             "price": "50$",
             "category": "Hooks",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
-        },
-        {
-            "id": 32,
-            "name": "useEffect",
-            "src":"useEffect.png",
-            "price": "70$",
-            "category": "Hooks",
-            "numOfReviews": "121",
-            "stars": 5
-        },
-        {
-            "id": 33,
-            "name": "store",
-            "src":"store.png",
-            "price": "20$",
-            "category": "Redux",
-            "numOfReviews": "37",
-            "stars": 3
-        },
-        {
-            "id": 34,
-            "name": "useState",
-            "src": "useState.png",
-            "price": "50$",
-            "category": "Hooks",
-            "numOfReviews": "56",
-            "stars": 4,
-            "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
-        },
-        {
-            "id": 35,
-            "name": "useEffect",
-            "src":"useEffect.png",
-            "price": "70$",
-            "category": "Hooks",
-            "numOfReviews": "121",
-            "stars": 5
-        },
-        {
-            "id": 36,
-            "name": "store",
-            "src":"store.png",
-            "price": "20$",
-            "category": "Redux",
-            "numOfReviews": "37",
-            "stars": 3
         }
     ]
 }
