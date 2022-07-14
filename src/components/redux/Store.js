@@ -10,5 +10,7 @@ export default configureStore({
         device: deviceSlice,
         shoppingCart: shoppingCartSlice
     },
-
+    preloadedState: {
+        shoppingCart: savedState
+    }
 })
