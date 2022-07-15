@@ -1,26 +1,37 @@
 {
   "files": {
     "main.css": "/react-shop/static/css/main.dc0560c4.css",
-    "main.js": "/react-shop/static/js/main.b104902c.js",
+    "main.js": "/react-shop/static/js/main.04f3219a.js",
     "static/js/787.affa5bbf.chunk.js": "/react-shop/static/js/787.affa5bbf.chunk.js",
     "static/media/socialMediaApp.png": "/react-shop/static/media/socialMediaApp.bcc46838cadcbb39afea.png",
     "static/media/recipeSite.png": "/react-shop/static/media/recipeSite.3c7aab7ab1534725f60e.png",
     "static/media/about-us.png": "/react-shop/static/media/about-us.d51d54178e229dc5b13e.png",
     "static/media/weatherApp.png": "/react-shop/static/media/weatherApp.2ac9b383b7f34d4a416f.png",
     "static/media/toDoList.png": "/react-shop/static/media/toDoList.6f144ff8d2579a5dca20.png",
+    "static/media/useMemo.png": "/react-shop/static/media/useMemo.301199b8c6d0e8fadaf4.png",
     "static/media/LogoImg.png": "/react-shop/static/media/LogoImg.00ecb23b7ebc5e7c3a52.png",
+    "static/media/useLayoutEffect.png": "/react-shop/static/media/useLayoutEffect.14f3d4f752471a1e0e7f.png",
     "static/media/useEffect.png": "/react-shop/static/media/useEffect.1c8acdfff6c8f323a760.png",
+    "static/media/useFormik.png": "/react-shop/static/media/useFormik.42429f9ac1cbf10aca4a.png",
+    "static/media/validation.png": "/react-shop/static/media/validation.a2076ecb08c279a30906.png",
+    "static/media/onSubmit.png": "/react-shop/static/media/onSubmit.784a4396dfb8f9004f02.png",
+    "static/media/Formik.png": "/react-shop/static/media/Formik.9123d9e7500ac4848602.png",
+    "static/media/values.png": "/react-shop/static/media/values.a1057eb800b418360952.png",
+    "static/media/Field.png": "/react-shop/static/media/Field.64e2f575917a66154937.png",
+    "static/media/useRef.png": "/react-shop/static/media/useRef.4a1a0c675047c7ad103f.png",
+    "static/media/useCallback.png": "/react-shop/static/media/useCallback.515876fe522660cc6a5e.png",
+    "static/media/useContext.png": "/react-shop/static/media/useContext.4e43a77d79f119869f28.png",
     "static/media/useState.png": "/react-shop/static/media/useState.e2b2f4153f68069a983f.png",
     "static/media/shopping-cart.png": "/react-shop/static/media/shopping-cart.96c73cb49987ccdf1154.png",
     "static/media/store.png": "/react-shop/static/media/store.f6e22de5ab65fb671afd.png",
     "index.html": "/react-shop/index.html",
     "static/media/react.svg": "/react-shop/static/media/react.3a03708e42481565259f.svg",
     "main.dc0560c4.css.map": "/react-shop/static/css/main.dc0560c4.css.map",
-    "main.b104902c.js.map": "/react-shop/static/js/main.b104902c.js.map",
+    "main.04f3219a.js.map": "/react-shop/static/js/main.04f3219a.js.map",
     "787.affa5bbf.chunk.js.map": "/react-shop/static/js/787.affa5bbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc0560c4.css",
-    "static/js/main.b104902c.js"
+    "static/js/main.04f3219a.js"
   ]
 }
