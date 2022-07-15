@@ -6,6 +6,7 @@
             "src": "useState.png",
             "price": "50$",
             "category": "Hooks",
+            "appType": "Calculator",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -16,24 +17,27 @@
             "src":"useEffect.png",
             "price": "70$",
             "category": "Hooks",
+            "appType": "RecipeSite",
             "numOfReviews": "121",
             "stars": 5
         },
         {
             "id": 3,
             "name": "useLayoutEffect",
-            "src":"store.png",
+            "src":"useLayoutEffect.png",
             "price": "20$",
             "category": "Redux",
+            "appType": "WeatherApp",
             "numOfReviews": "37",
             "stars": 3
         },
         {
             "id": 4,
             "name": "useRef",
-            "src": "useState.png",
+            "src": "useRef.png",
             "price": "100$",
             "category": "Hooks",
+            "appType": "ToDoList",
             "numOfReviews": "102",
             "stars": 1,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -41,27 +45,30 @@
         {
             "id": 5,
             "name": "useMemo",
-            "src":"useEffect.png",
+            "src":"useMemo.png",
             "price": "35$",
             "category": "Hooks",
+            "appType": "WeatherApp",
             "numOfReviews": "33",
             "stars": 4
         },
         {
             "id": 6,
             "name": "useContext",
-            "src":"store.png",
+            "src":"useContext.png",
             "price": "90$",
-            "category": "Redux",
+            "category": "Hooks",
+            "appType": "SocialMediaApp",
             "numOfReviews": "22",
             "stars": 2
         },
         {
             "id": 7,
             "name": "useCallback",
-            "src": "useState.png",
+            "src": "useCallback.png",
             "price": "60$",
             "category": "Hooks",
+            "appType": "WeatherApp",
             "numOfReviews": "26",
             "stars": 3,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -69,27 +76,30 @@
         {
             "id": 8,
             "name": "useFormik",
-            "src":"useEffect.png",
+            "src":"useFormik.png",
             "price": "70$",
             "category": "Formik",
+            "appType": "RecipeSite",
             "numOfReviews": "45",
             "stars": 5
         },
         {
             "id": 9,
-            "name": "<Formik>",
-            "src":"store.png",
+            "name": "Formik",
+            "src":"Formik.png",
             "price": "20$",
             "category": "Formik",
+            "appType": "RecipeSite",
             "numOfReviews": "37",
             "stars": 3
         },
         {
             "id": 10,
-            "name": "<Field>",
-            "src": "useState.png",
+            "name": "Field",
+            "src": "Field.png",
             "price": "50$",
             "category": "Formik",
+            "appType":"SocialMediaApp",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -97,27 +107,30 @@
         {
             "id": 11,
             "name": "values",
-            "src":"useEffect.png",
+            "src":"values.png",
             "price": "70$",
             "category": "Formik",
+            "appType":"RecipeSite",
             "numOfReviews": "121",
             "stars": 5
         },
         {
             "id": 12,
             "name": "onSubmit",
-            "src":"store.png",
+            "src":"onSubmit.png",
             "price": "20$",
             "category": "Formik",
+            "appType":"RecipeSite",
             "numOfReviews": "37",
             "stars": 3
         },
         {
             "id": 13,
             "name": "validation",
-            "src": "useState.png",
+            "src": "validation.png",
             "price": "50$",
             "category": "Formik",
+            "appType":"SocialMediaApp",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -128,6 +141,7 @@
             "src":"useEffect.png",
             "price": "70$",
             "category": "Formik",
+            "appType": "SocialMediaApp",
             "numOfReviews": "121",
             "stars": 5
         },
@@ -137,6 +151,7 @@
             "src":"store.png",
             "price": "20$",
             "category": "React-Router",
+            "appType":"SocialMediaApp",
             "numOfReviews": "37",
             "stars": 3
         },
@@ -146,6 +161,7 @@
             "src": "useState.png",
             "price": "50$",
             "category": "React-Router",
+            "appType":"RecipeSite",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -155,7 +171,8 @@
             "name": "Route",
             "src":"useEffect.png",
             "price": "70$",
-            "category": "Hooks",
+            "category": "React-Router",
+            "appType":"SocialMediaApp",
             "numOfReviews": "121",
             "stars": 5
         },
@@ -164,7 +181,8 @@
             "name": "BrowserRouter",
             "src":"store.png",
             "price": "20$",
-            "category": "Redux",
+            "category": "React-Router",
+            "appType":"RecipeSite",
             "numOfReviews": "37",
             "stars": 3
         },
@@ -173,7 +191,8 @@
             "name": "HashRouter",
             "src": "useState.png",
             "price": "50$",
-            "category": "Hooks",
+            "category": "React-Router",
+            "appType":"SocialMediaApp",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
@@ -183,7 +202,8 @@
             "name": "Slice",
             "src":"useEffect.png",
             "price": "70$",
-            "category": "Hooks",
+            "category": "Redux",
+            "appType":"SocialMediaApp",
             "numOfReviews": "121",
             "stars": 5
         },
@@ -193,6 +213,7 @@
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
+            "appType":"RecipeSite",
             "numOfReviews": "37",
             "stars": 3
         },
@@ -201,8 +222,9 @@
             "name": "Action",
             "src": "useState.png",
             "price": "50$",
-            "category": "Hooks",
+            "category": "Redux",
             "numOfReviews": "56",
+            "appType":"WeatherApp",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "
         },
@@ -211,7 +233,8 @@
             "name": "Dispatch",
             "src":"useEffect.png",
             "price": "70$",
-            "category": "Hooks",
+            "category": "Redux",
+            "appType":"WeatherApp",
             "numOfReviews": "121",
             "stars": 5
         },
@@ -221,6 +244,7 @@
             "src":"store.png",
             "price": "20$",
             "category": "Redux",
+            "appType":"ToDoList",
             "numOfReviews": "37",
             "stars": 3
         },
@@ -229,7 +253,8 @@
             "name": "Store",
             "src": "useState.png",
             "price": "50$",
-            "category": "Hooks",
+            "category": "Redux",
+            "appType":"ToDoList",
             "numOfReviews": "56",
             "stars": 4,
             "description": "Quisque efficitur lobortis efficitur. Donec rutrum cursus ipsum et posuere. Curabitur a pretium mauris. Nunc et facilisis mi. Pellentesque id porttitor massa, quis convallis libero. Aliquam quis dictum nisi, at interdum diam. Morbi ex lectus, venenatis cursus pretium sed, fringilla ut ligula. Quisque suscipit leo at neque lobortis cursus. Vestibulum suscipit luctus magna, placerat tempus quam porta molestie. Etiam elementum volutpat nibh, quis sodales ante iaculis vel. Ut ornare quis elit in placerat. Cras dapibus scelerisque lacus, non suscipit lacus tempus nec. Quisque dignissim, urna eget gravida dictum, neque sapien interdum orci, ac volutpat mi lorem ut quam. Nullam quis neque eget velit egestas viverra in vel nisi. "

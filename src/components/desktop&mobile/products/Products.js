@@ -9,11 +9,12 @@ import data from '../../../assets/products/products.json'
 export default function Products() {
   let allResults = 0
   let showedResults = 0;
-  let defaultResultsPerPage = 12;
+  let defaultResultsPerPage = 24;
   let renderedProducts = 0;
 
   const [searchParams] = useSearchParams();
   let productCategory = searchParams.get("category");
+  let productAppType = searchParams.get("appType");
   let products = data.products;
   let imgs = [];
 
@@ -99,12 +100,18 @@ export default function Products() {
       <div className={styles.productsSorted}>
         {products.map((product, i) => {
           if (renderedProducts<(defaultResultsPerPage)) {
-            if (productCategory === products[i].category || productCategory === null) {
+            if (productCategory === products[i].category || (productCategory === null && productAppType === null)) {
               renderedProducts++;
               return (
                 <Product key={product.id} product={products[i]}></Product>
               )
             }
+            else if(productAppType === products[i].appType || (productCategory === null && productAppType === null)) {
+              renderedProducts++;
+              return (
+                <Product key={product.id} product={products[i]}></Product>
+              )
+            } 
           }
           else {
             return null;
