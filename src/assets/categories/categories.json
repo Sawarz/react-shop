@@ -7,18 +7,14 @@
         },
         {
             "id": 2,
-            "name": "Props"
+            "name": "Formik"
         },
         {
             "id": 3,
-            "name": "JSX"
+            "name": "React-Router"
         },
         {
             "id": 4,
-            "name": "Router"
-        },
-        {
-            "id": 5,
             "name": "Redux"
         }
     ]

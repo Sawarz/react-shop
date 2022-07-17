@@ -22,7 +22,7 @@ export default function Home() {
             <div className={styles.motto}>Start a <span className={styles.mottoHighlight}>React</span>ion.</div>
             <Link className={styles.category} to="/products?category=Hooks">Try our Hooks!</Link>
             <Link className={styles.category} to="/products?category=Redux">Check out Redux!</Link>
-            <Link className={styles.category} to="/products?category=Props">Get new Props!</Link>
+            <Link className={styles.category} to="/products?category=Formik">Create a form with Formik!</Link>
           </div>
           <Matrix speed={12} lettersColor="green" letterSize={5} size={500}></Matrix>
         </div>
@@ -31,9 +31,9 @@ export default function Home() {
           <div className={styles.popularTitle}>POPULAR NOW</div>
           <div className={styles.categoriesContainer}>
             <Link className={styles.popularCategory} to="/products?category=Hooks">Hooks</Link>
-            <Link className={styles.popularCategory} to="/products?category=JSX">JSX</Link>
-            <Link className={styles.popularCategory} to="/products?category=Router">Router</Link>
             <Link className={styles.popularCategory} to="/products?category=Formik">Formik</Link>
+            <Link className={styles.popularCategory} to="/products?category=React-Router">React-Router</Link>
+            <Link className={styles.popularCategory} to="/products?category=Redux">Redux</Link>
           </div>
         </div>
         <div className={styles.appTypeTitle}>What project are you building?</div>
@@ -42,7 +42,7 @@ export default function Home() {
             return (
               <div key={appType.id} className={styles.appType}>
                 <h1 className={styles.appTypeHeader}>{appType.title}</h1>
-                <Link className={styles.appTypeLink} to="/products?category=ToDoList">
+                <Link className={styles.appTypeLink} to={`/products?appType=${appType.category}`}>
                   <img className={styles.appTypeImg} src={imgs[i]}></img>
                 </Link>
               </div>
