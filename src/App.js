@@ -19,6 +19,7 @@ import MobileAboutUs from './components/mobile/about-us/AboutUs';
 import MobileCart from './components/mobile/cart/Cart';
 import Cart from './components/desktop/cart/Cart';
 import Payment from './components/desktop&mobile/payment/Payment';
+import { setProducts } from './components/redux/productsSlice';
 
 function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 1224px)' })
@@ -38,6 +39,10 @@ function App() {
     useEffect(() => {
         saveState(appState);
     }, [appState])
+  
+  fetch("https://react-shop-products-api.herokuapp.com/products")
+    .then(response => response.json())
+    .then(json => dispatch(setProducts(json)))
 
   return (
     <HashRouter>

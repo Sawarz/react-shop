@@ -2,12 +2,11 @@
 import { React, useState } from 'react'
 import { useParams } from 'react-router'
 import styles from './styles.module.css'
-import data from '../../../../assets/products/products.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as starEmpty} from '@fortawesome/free-regular-svg-icons'
 import { faStar as starFilled } from '@fortawesome/free-solid-svg-icons'
-import { useDispatch } from 'react-redux'
-import { add, remove } from '../../../redux/shoppingCartSlice.js'
+import { useDispatch, useSelector } from 'react-redux'
+import { add } from '../../../redux/shoppingCartSlice.js'
 import PopUp from '../../../desktop&mobile/popUp/PopUp'
 
 export default function Product() {
@@ -19,15 +18,16 @@ export default function Product() {
     const dispatch = useDispatch();
 
     let product;
+    let products = useSelector((state) => state.products);
     
     let stars = [starEmpty, starEmpty, starEmpty, starEmpty, starEmpty];
     let productURL = useParams().product;
-    data.products.forEach((currentProduct) => {
+    products.forEach((currentProduct) => {
         if (currentProduct.name === productURL) {
             product = currentProduct;
         }
     })
-    let imgSrc = require(`../../../../assets/products/${product.name}.png`);
+    let imgSrc = require(`../../../../assets/products/${product.src}`);
 
     (function determineStars() {
         // eslint-disable-next-line default-case

@@ -4,7 +4,6 @@ import { useSearchParams } from 'react-router-dom'
 import { useLocation } from 'react-router'
 import { useSelector } from 'react-redux'
 import Product from '../../desktop/products/productInfo/ProductInfo.js'
-import data from '../../../assets/products/products.json'
 
 export default function Products() {
   let allResults = 0
@@ -15,7 +14,8 @@ export default function Products() {
   const [searchParams] = useSearchParams();
   let productCategory = searchParams.get("category");
   let productAppType = searchParams.get("appType");
-  let products = data.products;
+  let products = useSelector((state) => state.products);
+  console.log(products);
   let imgs = [];
 
   for (let i = 0; i < products.length; i++){
