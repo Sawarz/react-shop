@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-shop/static/css/main.dc0560c4.css",
-    "main.js": "/react-shop/static/js/main.04f3219a.js",
+    "main.css": "/react-shop/static/css/main.2b9bb7f2.css",
+    "main.js": "/react-shop/static/js/main.fc5eb680.js",
     "static/js/787.affa5bbf.chunk.js": "/react-shop/static/js/787.affa5bbf.chunk.js",
     "static/media/socialMediaApp.png": "/react-shop/static/media/socialMediaApp.bcc46838cadcbb39afea.png",
     "static/media/recipeSite.png": "/react-shop/static/media/recipeSite.3c7aab7ab1534725f60e.png",
@@ -25,13 +25,13 @@
     "static/media/shopping-cart.png": "/react-shop/static/media/shopping-cart.96c73cb49987ccdf1154.png",
     "static/media/store.png": "/react-shop/static/media/store.f6e22de5ab65fb671afd.png",
     "index.html": "/react-shop/index.html",
-    "static/media/react.svg": "/react-shop/static/media/react.3a03708e42481565259f.svg",
-    "main.dc0560c4.css.map": "/react-shop/static/css/main.dc0560c4.css.map",
-    "main.04f3219a.js.map": "/react-shop/static/js/main.04f3219a.js.map",
+    "static/media/react.svg": "/react-shop/static/media/react.928f956d9c8ebcffb98a.svg",
+    "main.2b9bb7f2.css.map": "/react-shop/static/css/main.2b9bb7f2.css.map",
+    "main.fc5eb680.js.map": "/react-shop/static/js/main.fc5eb680.js.map",
     "787.affa5bbf.chunk.js.map": "/react-shop/static/js/787.affa5bbf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc0560c4.css",
-    "static/js/main.04f3219a.js"
+    "static/css/main.2b9bb7f2.css",
+    "static/js/main.fc5eb680.js"
   ]
 }
