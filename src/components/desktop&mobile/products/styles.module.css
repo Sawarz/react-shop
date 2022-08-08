@@ -24,6 +24,7 @@
 }
 
 .resultsSorting{
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -40,4 +41,15 @@
 
 .productsSortedMobile{
     grid-template-columns: 1fr 1fr;
+}
+
+.sorting{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.sortingType{
+    font-weight: 600;
 }
