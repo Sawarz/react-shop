@@ -7,7 +7,7 @@ export default function DesktopRouteWrapper(props) {
     <div className='desktop-page'>
           <Navbar></Navbar>     
           <div className='desktop-page-content'>
-            {props.component}
+            {props.children}
           </div>
             <Footer></Footer>
         </div>

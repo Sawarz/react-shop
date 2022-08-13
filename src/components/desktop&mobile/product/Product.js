@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as starEmpty} from '@fortawesome/free-regular-svg-icons'
 import { faStar as starFilled } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch, useSelector } from 'react-redux'
-import { add } from '../../../redux/shoppingCartSlice.js'
-import PopUp from '../../../desktop&mobile/popUp/PopUp'
+import { add } from '../../redux/shoppingCartSlice.js'
+import PopUp from '../popUp/PopUp'
 
 export default function Product() {
     const [popUpOpen, setPopUpOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function Product() {
             product = currentProduct;
         }
     })
-    let imgSrc = require(`../../../../assets/products/${product.src}`);
+    let imgSrc = require(`../../../assets/products/${product.src}`);
 
     (function determineStars() {
         // eslint-disable-next-line default-case

@@ -7,7 +7,7 @@ export default function MobileRouteWrapper(props) {
     <div className='mobile-page'>
           <MobileNavbar></MobileNavbar>     
           <div className='mobile-page-content'>
-            {props.component}
+            {props.children}
           </div>
             <Footer></Footer>
         </div>

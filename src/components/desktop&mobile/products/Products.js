@@ -5,7 +5,6 @@ import { useLocation } from 'react-router'
 import { useSelector } from 'react-redux'
 import Product from '../../desktop/products/productInfo/ProductInfo.js'
 import Dropdown from '../dropdown/Dropdown'
-import { Children } from 'react'
 
 export default function Products() {
   const [sorting, setSorting] = useState("No sorting");
