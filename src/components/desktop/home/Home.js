@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import styles from './styles.module.css'
 import data from '../../../assets/appTypes/appTypes.json'
 import { Link } from 'react-router-dom'
 import Navbar from '../navbar/navbar/Navbar'
 import Footer from '../../desktop&mobile/footer/Footer'
-import Matrix from '../../desktop&mobile/matrix/Matrix'
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import Model from '../../../assets/React'
 
 export default function Home() {
   let appTypes = data.appTypes;
@@ -13,6 +15,8 @@ export default function Home() {
   for (let i = 0; i < appTypes.length; i++){
     imgs[i] = require(`../../../assets/appTypes/${appTypes[i].src}`);
   }
+
+
   return (
     <div className="desktop-page">
       <Navbar></Navbar>
@@ -24,7 +28,26 @@ export default function Home() {
             <Link className={styles.category} to="/products?category=Redux">Check out Redux!</Link>
             <Link className={styles.category} to="/products?category=Formik">Create a form with Formik!</Link>
           </div>
-          <Matrix speed={12} lettersColor="green" letterSize={5} size={500}></Matrix>
+          <div className={styles.modelContainer}>
+            <div className={styles.dragMessage}>Drag me!</div>
+            <Canvas
+            camera={{ position: [1, 0, 10], fov: 5 }}
+            style={{
+              backgroundColor: 'transparent',
+              width: '400px',
+              height: '400px',
+              zIndex: '0',
+              boxShadow: '0px 8px 15px 10px rgba(0, 0, 0, 0.1)'
+            }}>
+              <ambientLight intensity={1.25} />
+              <ambientLight intensity={0.1} />
+              <directionalLight intensity={0.4} />
+              <Suspense fallback={null}>
+                  <Model></Model>
+              </Suspense>
+              <OrbitControls />
+            </Canvas>
+          </div>
         </div>
         <hr className={styles.hrStyle}></hr>
         <div className={styles.popularNow}>

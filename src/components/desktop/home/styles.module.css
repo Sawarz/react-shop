@@ -10,7 +10,7 @@
 
 .poster{
     width: 100%;
-    height: 95vh;
+    height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -138,3 +138,14 @@
     height: 100%;
 }
 
+.modelContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dragMessage{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
