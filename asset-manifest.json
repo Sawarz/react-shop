@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-shop/static/css/main.2b9bb7f2.css",
-    "main.js": "/react-shop/static/js/main.fc5eb680.js",
-    "static/js/787.affa5bbf.chunk.js": "/react-shop/static/js/787.affa5bbf.chunk.js",
+    "main.css": "/react-shop/static/css/main.34eff7d9.css",
+    "main.js": "/react-shop/static/js/main.b22bc037.js",
     "static/media/socialMediaApp.png": "/react-shop/static/media/socialMediaApp.bcc46838cadcbb39afea.png",
     "static/media/recipeSite.png": "/react-shop/static/media/recipeSite.3c7aab7ab1534725f60e.png",
+    "static/media/react.glb": "/react-shop/static/media/react.d3c5dc434ce9563ea788.glb",
     "static/media/about-us.png": "/react-shop/static/media/about-us.d51d54178e229dc5b13e.png",
     "static/media/weatherApp.png": "/react-shop/static/media/weatherApp.2ac9b383b7f34d4a416f.png",
     "static/media/toDoList.png": "/react-shop/static/media/toDoList.6f144ff8d2579a5dca20.png",
@@ -26,12 +26,11 @@
     "static/media/store.png": "/react-shop/static/media/store.f6e22de5ab65fb671afd.png",
     "index.html": "/react-shop/index.html",
     "static/media/react.svg": "/react-shop/static/media/react.928f956d9c8ebcffb98a.svg",
-    "main.2b9bb7f2.css.map": "/react-shop/static/css/main.2b9bb7f2.css.map",
-    "main.fc5eb680.js.map": "/react-shop/static/js/main.fc5eb680.js.map",
-    "787.affa5bbf.chunk.js.map": "/react-shop/static/js/787.affa5bbf.chunk.js.map"
+    "main.34eff7d9.css.map": "/react-shop/static/css/main.34eff7d9.css.map",
+    "main.b22bc037.js.map": "/react-shop/static/js/main.b22bc037.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b9bb7f2.css",
-    "static/js/main.fc5eb680.js"
+    "static/css/main.34eff7d9.css",
+    "static/js/main.b22bc037.js"
   ]
 }
